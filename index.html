@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="it">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presto Presto · Stiamo arrivando</title>
+<meta name="description" content="Presto Presto, coffee and pasta to go: pasta fresca espressa e caffè italiano autentico. Stiamo arrivando, presto presto.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#231F20">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23231F20'/%3E%3Cg fill='%23ED592D' transform='translate(-2 4) skewX(-12)'%3E%3Cpath fill-rule='evenodd' d='M30 8h14a12 12 0 0 1 0 24h-6v14h-8zM38 15h5a5 5 0 0 1 0 10h-5z'/%3E%3Cpath d='M14 10h14l-1 4h-11zM10 18h18l-1 4h-15zM16 26h12l-1 4h-9z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap">
+<style>
+/* Colours and type from the Presto Presto logo guideline (brand/LogoGuideline_PrestoPresto.pdf).
+   Puffin Display Soft (Adobe Fonts) is the brand font; Baloo 2 is a free stand-in. */
+:root{--bg:#231F20;--orange:#ED592D;--light:#EBE8EB;--muted:#B7B0B3;--green:#336637;--red:#C73635}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--light);font-family:"Baloo 2",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;display:grid;grid-template-rows:1fr auto;overflow-x:hidden}
+main{display:grid;place-items:center;padding:40px 16px 24px;text-align:center}
+.card{max-width:760px;width:100%}
+.logo{width:min(260px,64vw);height:auto;display:block;margin:0 auto}
+h1{font-weight:800;color:var(--orange);font-size:clamp(44px,10vw,92px);line-height:1;margin:34px 0 4px;transform:skewX(-10deg)}
+.nw{white-space:nowrap}
+.dots span{display:inline-block;animation:dot 1.4s infinite;opacity:.2}
+.dots span:nth-child(2){animation-delay:.2s}.dots span:nth-child(3){animation-delay:.4s}
+@keyframes dot{40%{opacity:1}}
+.sub{font-weight:700;text-transform:uppercase;letter-spacing:.045em;font-size:clamp(20px,4vw,30px);color:var(--light);margin:6px 0 0}
+.sub i{font-style:normal;display:inline-block;animation:hop 2.4s ease-in-out infinite}
+.sub i+i{animation-delay:.3s}
+@keyframes hop{0%,60%,100%{transform:none}30%{transform:translateY(-5px)}}
+p.lede{font-size:19px;line-height:1.55;max-width:34ch;margin:26px auto 0;color:var(--muted)}
+p.lede b{color:var(--light);font-weight:700}
+.feat{display:flex;justify-content:center;margin:30px auto 0;max-width:560px}
+.feat div{flex:1 1 0;padding:4px 12px;font-weight:700;text-transform:uppercase;font-size:14px;letter-spacing:.045em;line-height:1.25;color:var(--light)}
+.feat div+div{border-left:1px solid rgba(235,232,235,.25)}
+.feat svg{width:48px;height:48px;display:block;margin:0 auto 10px;stroke:var(--orange);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;border:1.6px solid var(--orange);border-radius:50%;padding:9px}
+.ig{display:inline-flex;align-items:center;gap:8px;margin-top:32px;padding:9px 20px;border:2px solid var(--orange);border-radius:999px;color:var(--light);text-decoration:none;font-weight:700;font-size:16px;letter-spacing:.02em}
+.ig:hover{background:var(--orange);color:#fff}
+.ig svg{width:18px;height:18px}
+footer{padding:16px 16px 22px;text-align:center;font-size:13px;color:#8E878A}
+footer a{color:inherit}
+@media (max-width:480px){.feat div{padding:4px 6px;font-size:12px}.feat svg{width:42px;height:42px;padding:8px}}
+@media (prefers-reduced-motion:reduce){.dots span,.sub i{animation:none}.dots span{opacity:1}}
+</style>
+<main>
+  <div class="card">
+    <img class="logo" src="logo.svg" width="252" height="307" alt="Presto Presto · Coffee and pasta to go">
+    <h1>Stiamo <span class="nw">arrivando<span class="dots" aria-hidden="true"><span>.</span><span>.</span><span>.</span></span></span></h1>
+    <p class="sub"><i>presto</i> <i>presto</i></p>
+    <p class="lede"><b>Pasta fresca espressa</b> e <b>caffè italiano autentico</b>. La tua sosta italiana, al ritmo del tuo viaggio.</p>
+    <div class="feat">
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16c0 4.4-3.6 8-8 8s-8-3.6-8-8z"/><path d="M8 18.5l-1 1.5M16 18.5l1 1.5"/><path d="M9 7c1-1.5 0-2.5 1-4M13 7c1-1.5 0-2.5 1-4"/></svg>Pasta fresca<br>espressa</div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 6c.7-1 0-2 .7-3M11.5 6c.7-1 0-2 .7-3"/></svg>Caffè italiano<br>autentico</div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7"/><path d="M12 13.5V9.5M12 13.5l2.5 2M10 3h4M12 3v3.5"/></svg>Veloce, buono,<br>subito</div>
+    </div>
+    <a class="ig" href="https://www.instagram.com/prestopresto.it/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>@prestopresto.it</a>
+  </div>
+</main>
+<footer>presto-presto.it · <span>Powered by <a href="mailto:it.konsulent@yahoo.com?subject=Richiesta%20sito%20web">IT-Konsulent Tavassoli</a></span></footer>
+</html>
